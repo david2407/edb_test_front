@@ -9,7 +9,7 @@ export const List = ({ listData, rowClick }) => {
   return (
     <div className="list">
       <table className="list__table">
-        <caption>Person Information table - select person row for updating</caption>
+        <caption>Person Information </caption>
         <thead>
           <tr>
             <th>Id</th>
