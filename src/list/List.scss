@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  justify-content: center;
+  &__table {
+    width: 98%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    th {
+      text-align: center;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #f1f1f1;
+    }
+
+    caption {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      border: 2px solid black;
+      padding-top: 0.5rem;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+  }
+}
