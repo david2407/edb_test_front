@@ -20,6 +20,7 @@ function App() {
 
   const notify = () => toast("Created person succesfully!");
   const notifyUpdate = () => toast("Updated person succesfully!");
+  const cancelEdit = () => setIsEdit(false);
 
   const fetchAllData = () => {
     fetch(`https://edbtestback.herokuapp.com/person`, {
@@ -91,7 +92,7 @@ function App() {
       .then((json) => {
         fetchAllData();
         notifyUpdate();
-        setIsEdit(false)
+        setIsEdit(false);
       })
       .catch((err) => console.log(err));
   };
@@ -99,7 +100,7 @@ function App() {
   return (
     <div>
       {isEdit ? (
-        <EditForm currentUser={currentUser} submit={onEdit} />
+        <EditForm currentUser={currentUser} submit={onEdit} cancelAction={cancelEdit} />
       ) : (
         <Form submit={onSubmit} />
       )}

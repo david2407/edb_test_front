@@ -1,39 +1,50 @@
-
-
 .submission-form {
-    font-family: sans-serif;
-    max-width: 500px;
-    margin: 2rem auto;
-    border: 2px solid black;
-    padding: 2rem;
-    border-radius: 5px;
-    background: #9fd3c7; 
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 5px;
+  background: #9fd3c7;
 
-    label{
-        display: block;
-        padding:1rem 1rem .5rem;
-        font-size: 18px;
-    }
-    input, select {
-        display: block;
-        width: 100%;
-        border: 2px solid black;
-        padding-top: .5rem;
-        font-size: 18px;
-        border-radius: 5px;
-    }
-    
+  label {
+    display: block;
+    padding: 1rem 1rem 0.5rem;
+    font-size: 18px;
+  }
+  input,
+  select {
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    padding-top: 0.5rem;
+    font-size: 18px;
+    border-radius: 5px;
+  }
 }
 
 #send {
+  border: 0;
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  cursor: pointer;
+  &:hover {
+    background-color: blue;
+  }
+}
+
+#cancel {
     border: 0;
     background-color: black;
-    padding: .5rem;
+    padding: 0.5rem;
     color: white;
     margin: 1rem 0;
-    width: auto;
+    width: 15%;
     cursor: pointer;
-    &:hover{
-        background-color: blue;
+    &:hover {
+      background-color: blue;
     }
-}
+  }
